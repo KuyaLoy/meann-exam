@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.objectFitContain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.objectFitCover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .hero__inner__content {
+  border-radius: 0 30%;
+  z-index: 1;
+  color: #6A6A6A;
+  font-size: 50px;
+  line-height: 61.12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5019607843);
+  padding: 24px;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+main .explore__cont {
+  z-index: 1;
+  text-align: center;
+  top: -20px;
+}
+main .explore__cont p {
+  color: #bfbfbf;
+  font-size: 18px;
+}
+main .explore__cont .line {
+  height: 150px;
+  border-right: 1px solid #6A6A6A;
+  width: 1px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+main .product {
+  padding-top: 200px;
+  padding-bottom: 126px;
+}
+main .product .title {
+  font-size: 30px;
+  color: #6A6A6A;
+  max-width: 1064px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 48px;
+}
+main .product__cont {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main .product__cont__category {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  height: 767px;
+  padding: 80px 20px;
+  background-position: center;
+  background-position: center;
+  background-repeat: cover;
+  background-repeat: no-repeat;
+}
+main .product__cont__category a {
+  background: white;
+  border: none;
+  outline: none;
+  padding: 20px;
+  min-width: 341px;
+  color: #6A6A6A;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+}
+main .bestSeller .title {
+  text-align: center;
+  font-size: 36px;
+  color: #6A6A6A;
+}
+main .bestSeller__cont {
+  margin-top: 100px;
+  gap: 26px;
+}
+main .bestSeller__cont__item {
+  -webkit-box-flex: 31%;
+      -ms-flex: 31%;
+          flex: 31%;
+}
+main .bestSeller__cont__item img {
+  width: 100%;
+}
+main .bestSeller__cont__item .desc {
+  margin-top: 30px;
+  font-size: 18px;
+}
+main .bestSeller__cont__item .desc .name {
+  font-weight: bold;
+}
+main .bestSeller__cont__item .desc .price {
+  margin-top: 25px;
+}
+main .bestSeller__cont__item .desc .other-text {
+  margin-top: 20px;
+  color: #C3C3C3;
+  font-style: italic;
+}
