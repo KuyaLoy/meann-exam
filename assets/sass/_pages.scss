@@ -231,7 +231,7 @@ main {
                     height: 20px;
                     width: 20px;
                     margin-left: 20px;
-                    background-image: url(../images/ig.png);
+                    background-image: url(../images/icons/ig.png);
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -280,68 +280,6 @@ main {
                 @include u.breakpoint-max(xs) {
                     grid-auto-columns: 100%;
                 }
-            }
-        }
-
-        footer {
-            
-            color: #777777;
-
-            .container {
-                @include u.breakpoint-min(large) {
-                    max-width: 90%;
-                }
-                @include u.breakpoint-max(small) {
-                    text-align: center;
-                }
-            }
-
-            h5 {
-                font-weight: bold;  
-                font-size: 18px;    
-            }
-            p {
-                font-size: 18px;
-                line-height: 30px;
-                @include u.breakpoint-min(medium) {
-                    max-width: 430px;
-                }
-            }
-
-            ul {
-                li {
-                    a {
-                        text-decoration: none;
-                        color: #777777;
-                        margin-bottom: 10px;
-                        display: block;
-                    }
-                }
-            }
-            .form-outline {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-
-                input {
-                    border: 1px solid #777777;
-                    outline: none;
-                    color: #777777;
-                    font-size: 18px;
-                    font-weight: bold;
-                    width: 70%;
-                    border-radius: 0;
-                    height: 50px;
-                }
-                button {
-                    width: 30%;
-                    background-color: #d0d0d0;
-                    color: #777777;
-                    height: 50px;
-                    border-radius: 0;
-                }
-
             }
         }
         

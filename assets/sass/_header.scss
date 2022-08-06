@@ -1,0 +1,75 @@
+@use "./utilities" as u;
+
+header {
+
+    .web-view {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        align-items: center;
+        justify-items: center;
+
+        a {
+            color: #737373;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .cont-1 {
+            display: flex;
+            gap: 50px;
+            
+        }
+
+        .cont-2 {
+            
+            img {
+                max-width: 265px;
+            }
+
+        }
+
+        .cont-3 {
+            display: flex;
+            gap: 100px;
+            align-items: center;
+            justify-content: center;
+
+            .button-etc {
+                display: flex;
+                gap: 30px;
+
+                a {
+                    display: block;
+                    height: 30px;
+                    width: 30px;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    //background-color: red;
+
+                    &.search {
+                        background-image: url(../images/icons/search.svg);
+                    }
+                    &.user {
+                        background-image: url(../images/icons/user.svg);
+                    }
+                    &.cart {
+                        background-image: url(../images/icons/cart.svg);
+                    }
+                }
+            }
+        }
+
+        @include u.breakpoint-max(medium) {
+            display: none;
+        }
+    }
+    .mobile-view {
+        display: none;
+        
+        @include u.breakpoint-max(medium) {
+            display: block;
+        }
+    }
+
+}
