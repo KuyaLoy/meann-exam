@@ -1,16 +1,18 @@
 
+@use 'function' as f;
+
 $breakpoints-up: (
-    'small': 320,
-    'medium': 600,
-    'large': 1058,
-    'xlarge': 1440,
+    'small': f.rem(320),
+    'medium': f.em(600),
+    'large': f.em(1058),
+    'xlarge': f.em(1440),
 );
 
 $breakpoints-down: (
-    'xs':519.99, 
-    'small': 779.98,
-    'medium': 1057.98,
-    'large': 1399.98,
+    'xs':f.em(519.99), 
+    'small': f.em(779.98),
+    'medium': f.em(1057.98),
+    'large': f.em(1399.98),
 );
 
 @mixin breakpoint-min($size){
