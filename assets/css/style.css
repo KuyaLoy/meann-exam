@@ -549,3 +549,24 @@ footer .form-outline button {
   height: 50px;
   border-radius: 0;
 }
+footer .payments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+footer .payments a {
+  color: #777777;
+  text-decoration: none;
+  font-size: 16px;
+}
+footer .payments .payments-icon {
+  max-width: 150px;
+}
