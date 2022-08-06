@@ -213,6 +213,51 @@ main {
                 }
             }
         }
+
+        .gallery {
+            &__cont {
+                display: grid;
+                grid-auto-flow: column;
+                grid-auto-columns: 25%;
+                overflow-x: auto;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                cursor: grab;
+
+                
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .slide {
+                    img {
+                        inline-size: 100%;
+                        aspect-ratio: 4 / 4;
+                        object-fit: cover;
+                        border-radius: .2rem;
+
+                        @include u.breakpoint-max(medium) {
+                            aspect-ratio: 3 / 3;
+                        }
+                        @include u.breakpoint-max(small) {
+                            aspect-ratio: 2 / 2;
+                        }
+                        @include u.breakpoint-max(xs) {
+                            aspect-ratio: 1 / 1;
+                        }
+                    }
+                }
+                @include u.breakpoint-max(medium) {
+                    grid-auto-columns: 33.33%;
+                }
+                @include u.breakpoint-max(small) {
+                    grid-auto-columns: 50%;
+                }
+                @include u.breakpoint-max(xs) {
+                    grid-auto-columns: 100%;
+                }
+            }
+        }
         
     }
 
