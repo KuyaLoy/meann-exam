@@ -144,6 +144,7 @@ header .mobile-view .menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100px;
 }
 header .mobile-view .menu .logo {
   max-width: 200px;
@@ -354,6 +355,27 @@ main section .bestSeller__cont__item .desc .other-text {
   main section .bestSeller__cont__item {
     width: 100%;
   }
+}
+main section .testimonials li i {
+  color: #828281;
+  height: 20px;
+  width: 20px;
+}
+main section .testimonials .text-muted {
+  margin: 0 auto;
+  color: #6c757d !important;
+  margin-top: 30px;
+  font-size: 36px;
+  max-width: 1000px;
+  text-align: center;
+}
+main section .testimonials .read-testi {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 35px;
+  color: #737373;
 }
 main section .services {
   background-color: #F1F0EC;
