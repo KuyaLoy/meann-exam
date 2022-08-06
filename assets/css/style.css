@@ -69,6 +69,7 @@ header .web-view {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  padding: 10px 0;
 }
 header .web-view a {
   color: #737373;
