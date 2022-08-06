@@ -126,11 +126,87 @@ header .web-view .cont-3 .button-etc a.cart {
 }
 header .mobile-view {
   display: none;
+  padding: 10px 20px;
 }
 @media (max-width: 66.12375em) {
   header .mobile-view {
     display: block;
   }
+}
+header .mobile-view .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .mobile-view .menu .logo {
+  max-width: 200px;
+}
+header .mobile-view .menu .menu-logo {
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+header .mobile-view .slide-nav {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 115px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-top: 1px solid #737373;
+  -webkit-box-shadow: #737373 0px 20px 20px;
+          box-shadow: #737373 0px 20px 20px;
+  display: none;
+}
+header .mobile-view .slide-nav .menu-nav {
+  padding: 20px;
+}
+header .mobile-view .slide-nav .menu-nav a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 20px;
+  color: #737373;
+}
+header .mobile-view .slide-nav .menu-nav .button-etc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header .mobile-view .slide-nav .menu-nav .button-etc a {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header .mobile-view .slide-nav .menu-nav .button-etc a.search {
+  background-image: url(../images/icons/search.svg);
+}
+header .mobile-view .slide-nav .menu-nav .button-etc a.user {
+  background-image: url(../images/icons/user.svg);
+}
+header .mobile-view .slide-nav .menu-nav .button-etc a.cart {
+  background-image: url(../images/icons/cart.svg);
 }
 
 main section article:not(.hero) {

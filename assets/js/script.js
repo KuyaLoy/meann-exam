@@ -24,3 +24,7 @@ slider.addEventListener('mousemove', (e) => {
   const dragged = x - startX;
   slider.scrollLeft = sLeft - dragged;
 }); 
+
+function menuClick() {
+    $('.slide-nav').slideToggle();
+}
