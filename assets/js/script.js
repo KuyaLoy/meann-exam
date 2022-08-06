@@ -39,3 +39,10 @@ $(document).mouseup(function(e)
         $('.slide-nav').slideToggle();
     }
 });
+
+AOS.init({ 
+  disable: function() {
+    var maxWidth = 779;
+    return window.innerWidth < maxWidth;
+  }
+}); 
