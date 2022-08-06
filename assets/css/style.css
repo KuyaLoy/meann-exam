@@ -62,7 +62,7 @@ table {
      object-fit: cover;
 }
 
-main section article:not(.hero), main section article:not(:last-child) {
+main section article:not(.hero) {
   margin-bottom: 126px;
 }
 main section .hero__inner__content {
@@ -337,4 +337,66 @@ main section .gallery__cont .slide img {
   main section .gallery__cont {
     grid-auto-columns: 100%;
   }
+}
+main section footer {
+  color: #777777;
+}
+@media (min-width: 66.125em) {
+  main section footer .container {
+    max-width: 90%;
+  }
+}
+@media (max-width: 48.74875em) {
+  main section footer .container {
+    text-align: center;
+  }
+}
+main section footer h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+main section footer p {
+  font-size: 18px;
+  line-height: 30px;
+}
+@media (min-width: 37.5em) {
+  main section footer p {
+    max-width: 430px;
+  }
+}
+main section footer ul li a {
+  text-decoration: none;
+  color: #777777;
+  margin-bottom: 10px;
+  display: block;
+}
+main section footer .form-outline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main section footer .form-outline input {
+  border: 1px solid #777777;
+  outline: none;
+  color: #777777;
+  font-size: 18px;
+  font-weight: bold;
+  width: 70%;
+  border-radius: 0;
+  height: 50px;
+}
+main section footer .form-outline button {
+  width: 30%;
+  background-color: #d0d0d0;
+  color: #777777;
+  height: 50px;
+  border-radius: 0;
 }
